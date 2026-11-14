@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>frostlume · 动画</title>
+<style>
+:root{--bg:#fff;--ink:#0F1B33;--sub:#64748B;--btn:#EEF2F7}
+body.dark{--bg:#0B1222;--ink:#EAF2FF;--sub:#8FA3BF;--btn:#18233A}
+html,body{height:100%;margin:0}
+body{background:var(--bg);display:grid;place-items:center;font:14px system-ui,sans-serif;transition:background .4s}
+#logo{width:min(92vw,900px);overflow:visible}
+.ink{fill:var(--ink)} .sub{fill:var(--sub)}
+.ch,.sc,#mark,#logo polygon,#glint,#spark{transform-box:fill-box;transform-origin:center}
+
+.bar{position:fixed;bottom:24px;left:50%;translate:-50% 0;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+button{border:0;border-radius:999px;padding:9px 16px;background:var(--btn);color:var(--ink);cursor:pointer;font:inherit}
+button:hover{filter:brightness(.95)}
+#logo .star{fill:#60A5FA} body.dark #logo .star{fill:#E6F6FF}
+button.on{outline:2px solid #60A5FA}
+</style></head>
+<body>
+<svg id="logo" viewBox="0 0 1200 420" role="img" aria-label="frostlume studio">
+<defs>
+ <linearGradient id="deep" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3B82F6"/><stop offset="1" stop-color="#1E3A8A"/></linearGradient>
+ <linearGradient id="band" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+ <clipPath id="hexclip"><polygon points="408.84,148.20 448.59,171.15 448.59,217.05 408.84,240.00 369.09,217.05 369.09,171.15"/></clipPath>
+ <radialGradient id="flash"><stop offset="0" stop-color="#fff"/><stop offset=".35" stop-color="#E6F6FF" stop-opacity=".9"/><stop offset="1" stop-color="#93C5FD" stop-opacity="0"/></radialGradient>
+</defs>
+<g id="word" class="ink"><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M127 0V543Q127 598 151.5 640.0Q176 682 219.5 706.0Q263 730 320 730Q364 730 395.0 715.0Q426 700 453 672L382 601Q370 613 356.0 620.0Q342 627 320 627Q280 627 258.5 605.5Q237 584 237 544V0ZM12 380V480H382V380Z" transform="translate(0.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M61 0V480H171V0ZM171 267 133 286Q133 377 173.5 433.5Q214 490 296 490Q332 490 361.0 477.0Q390 464 415 435L343 361Q330 375 314.0 381.0Q298 387 277 387Q231 387 201.0 358.0Q171 329 171 267Z" transform="translate(403.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M218 -10Q178 -10 141.0 0.5Q104 11 73.0 30.5Q42 50 19 78L89 148Q114 119 146.5 104.5Q179 90 220 90Q257 90 276.0 101.0Q295 112 295 133Q295 155 277.0 167.0Q259 179 230.5 187.5Q202 196 170.5 205.0Q139 214 110.5 229.5Q82 245 64.0 272.0Q46 299 46 342Q46 388 67.5 421.0Q89 454 128.5 472.0Q168 490 223 490Q281 490 325.5 469.5Q370 449 400 408L330 338Q309 364 282.0 377.0Q255 390 220 390Q187 390 169.0 380.0Q151 370 151 351Q151 331 169.0 320.0Q187 309 215.5 301.0Q244 293 275.5 283.5Q307 274 335.5 257.5Q364 241 382.0 213.5Q400 186 400 142Q400 72 351.0 31.0Q302 -10 218 -10Z" transform="translate(1391.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M134 0V680H244V0ZM19 380V480H359V380Z" transform="translate(1821.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M61 0V720H171V0Z" transform="translate(2199.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M258 -10Q197.3956834532374 -10 149.69784172661872 17.0Q102 44 75.5 91.34606205250597Q49 138.69212410501194 49 201.12649164677805V480H159V206Q159 171 170.5 146.5Q182 122 204.5 109.0Q227 96 258.32758620689657 96Q306 96 331.5 124.5Q357 153 357 206V480H467V201Q467 138 440.5 90.5Q414 43 366.86330935251794 16.5Q319.72661870503595 -10 258 -10Z" transform="translate(2431.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M61 0V480H171V0ZM380 0V286Q380 334 350.0 360.5Q320 387 276 387Q246 387 222.5 375.0Q199 363 185.0 340.5Q171 318 171 286L128 310Q128 365 152.0 405.0Q176 445 217.0 467.5Q258 490 309 490Q360 490 401.0 468.0Q442 446 466.0 406.0Q490 366 490 310V0ZM699 0V286Q699 334 669.0 360.5Q639 387 595 387Q566 387 542.0 375.0Q518 363 504.0 340.5Q490 318 490 286L428 310Q433 365 460.0 405.0Q487 445 529.5 467.5Q572 490 623 490Q675 490 717.0 468.0Q759 446 784.0 406.0Q809 366 809 310V0Z" transform="translate(2948.0,0)"/></g></g><g class="ch"><g transform="translate(209.13,240.0) scale(0.18000,-0.18000)"><path d="M284 -10Q212 -10 154.5 22.5Q97 55 63.5 112.0Q30 169 30 240Q30 311 63.0 367.5Q96 424 152.5 457.0Q209 490 278 490Q345 490 396.5 459.0Q448 428 477.5 374.0Q507 320 507 251Q507 239 505.5 226.5Q504 214 501 199H107V289H444L403 253Q401 297 386.0 327.0Q371 357 343.5 373.0Q316 389 276 389Q234 389 203.0 371.0Q172 353 155.0 320.5Q138 288 138 243Q138 198 156.0 164.0Q174 130 207.0 111.5Q240 93 283 93Q320 93 351.5 106.0Q383 119 405 144L475 73Q440 32 390.0 11.0Q340 -10 284 -10Z" transform="translate(3809.0,0)"/></g></g></g>
+<g id="mark">
+ <polygon id="body" points="408.84,148.20 448.59,171.15 448.59,217.05 408.84,240.00 369.09,217.05 369.09,171.15" fill="url(#deep)"/>
+ <polygon class="facet" id="fa" points="408.84,148.20 448.59,171.15 408.84,194.10" fill="#E6F6FF" stroke="#E6F6FF" stroke-width="0.92" stroke-linejoin="round"/>
+ <polygon class="facet" id="fb" points="408.84,148.20 408.84,194.10 369.09,171.15" fill="#93C5FD" stroke="#93C5FD" stroke-width="0.92" stroke-linejoin="round"/>
+ <polygon class="facet" id="fc" points="369.09,171.15 408.84,194.10 369.09,217.05" fill="#60A5FA" stroke="#60A5FA" stroke-width="0.92" stroke-linejoin="round"/>
+</g>
+<g clip-path="url(#hexclip)"><rect id="glint" x="300" y="120" width="60" height="150" fill="url(#band)" opacity="0"/></g>
+<circle id="spark" cx="408.84" cy="194.1" r="60" fill="url(#flash)" opacity="0"/>
+<g id="studio" class="sub"><g class="sc"><g transform="translate(503.05,320.0) scale(0.03400,-0.03400)"><path d="M278 -10Q197.5 -10 139.5 20.25Q81.5 50.5 38 106L88.5 156Q124 106.5 170.5 82.5Q217 58.5 281 58.5Q347 58.5 387.75 88.5Q428.5 118.5 428.5 171.5Q428.5 213 409.75 239.25Q391 265.5 360.25 282.25Q329.5 299 292.75 312.0Q256 325 219.25 339.5Q182.5 354 151.75 375.75Q121 397.5 102.25 431.75Q83.5 466 83.5 519Q83.5 574.5 110.5 614.5Q137.5 654.5 184.5 676.25Q231.5 698 291.5 698Q358.5 698 411.25 672.0Q464 646 499 601.5L448.5 551.5Q416.5 590 378.5 609.75Q340.5 629.5 290 629.5Q230 629.5 193.75 601.5Q157.5 573.5 157.5 523.5Q157.5 485 176.25 461.0Q195 437 225.75 421.0Q256.5 405 293.25 392.25Q330 379.5 366.75 364.5Q403.5 349.5 434.25 326.75Q465 304 483.75 268.25Q502.5 232.5 502.5 178Q502.5 88.5 442.0 39.25Q381.5 -10 278 -10Z" transform="translate(0.0,0)"/></g></g><g class="sc"><g transform="translate(503.05,320.0) scale(0.03400,-0.03400)"><path d="M279 0V668.5H352.5V0ZM36.5 621V688H595V621Z" transform="translate(965.8,0)"/></g></g><g class="sc"><g transform="translate(503.05,320.0) scale(0.03400,-0.03400)"><path d="M338.65806451612906 -10Q264.31612903225806 -10 205.59677419354838 23.474789915966387Q146.8774193548387 56.94957983193277 112.93870967741935 115.26050420168067Q79 173.57142857142858 79 247V688H152.5V250.5Q152.5 192.518779342723 176.98420074349443 149.70187793427232Q201.46840148698885 106.8849765258216 243.7592936802974 83.6924882629108Q286.0501858736059 60.5 338.57992565055764 60.5Q392 60.5 433.4798657718121 83.67924528301887Q474.9597315436242 106.85849056603774 499.2298657718121 149.6509433962264Q523.5 192.4433962264151 523.5 249.5V688H597V246Q597 172.54852320675104 563.3023255813953 114.75949367088607Q529.6046511627907 56.970464135021096 471.30232558139534 23.485232067510548Q413 -10 338.65806451612906 -10Z" transform="translate(2009.5,0)"/></g></g><g class="sc"><g transform="translate(503.05,320.0) scale(0.03400,-0.03400)"><path d="M132.5 0V67.5H335Q416 67.5 478.0 103.0Q540 138.5 574.75 201.0Q609.5 263.5 609.5 345Q609.5 425.5 574.5 487.75Q539.5 550 477.5 585.25Q415.5 620.5 335 620.5H134.5V688H336.5Q412 688 475.5 662.25Q539 636.5 586.25 590.25Q633.5 544 659.5 481.25Q685.5 418.5 685.5 344Q685.5 270.5 659.5 207.5Q633.5 144.5 586.75 98.0Q540 51.5 476.5 25.75Q413 0 338.5 0ZM87.5 0V688H161V0Z" transform="translate(3097.3,0)"/></g></g><g class="sc"><g transform="translate(503.05,320.0) scale(0.03400,-0.03400)"><path d="M87.5 0V688H161V0Z" transform="translate(4248.1,0)"/></g></g><g class="sc"><g transform="translate(503.05,320.0) scale(0.03400,-0.03400)"><path d="M398 -10Q325 -10 262.25 17.25Q199.5 44.5 152.5 93.25Q105.5 142 79.25 206.5Q53 271 53 345Q53 419.5 79.0 483.5Q105 547.5 151.75 595.75Q198.5 644 260.75 671.0Q323 698 396 698Q469 698 531.5 671.0Q594 644 640.75 595.75Q687.5 547.5 713.75 483.0Q740 418.5 740 344Q740 270 714.0 205.5Q688 141 641.25 92.75Q594.5 44.5 532.5 17.25Q470.5 -10 398 -10ZM396 60.5Q474 60.5 534.25 97.5Q594.5 134.5 629.25 198.75Q664 263 664 345Q664 406 644.0 457.5Q624 509 588.0 547.25Q552 585.5 503.25 606.5Q454.5 627.5 396 627.5Q318.5 627.5 258.25 591.0Q198 554.5 163.5 490.75Q129 427 129 345Q129 284 149.0 231.75Q169 179.5 204.75 141.25Q240.5 103 289.5 81.75Q338.5 60.5 396 60.5Z" transform="translate(4908.8,0)"/></g></g></g>
+</svg>
+<div class="bar">
+ <button data-a="all">完整播放</button><button data-a="enter">入场</button>
+ <button data-a="loop" data-v="a">循环 A</button><button data-a="loop" data-v="b">循环 B</button><button data-a="loop" data-v="c">循环 C</button><button data-a="exit">退场</button>
+ <button data-a="theme">深/浅色</button>
+</div>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const E={out:'cubic-bezier(.16,1,.3,1)',in:'cubic-bezier(.7,0,.84,0)',io:'cubic-bezier(.65,0,.35,1)'};
+const chars=$$('#word .ch'), sc=$$('#studio .sc');
+const fa=$('#fa'),fb=$('#fb'),fc=$('#fc'),body=$('#body'),glint=$('#glint'),spark=$('#spark'),mark=$('#mark');
+// 字母按与冰晶的距离排序：从冰晶向两侧扩散
+const hx=408.84, order=chars.map(c=>[c,Math.abs(c.getBBox().x+c.getBBox().width/2-hx)]).sort((a,b)=>a[1]-b[1]).map(x=>x[0]);
+let running=[],loopOn=false,token=0;
+const A=(el,kf,o)=>{const a=el.animate(kf,{fill:'both',...o});running.push(a);return a};
+function stopAll(){token++;loopOn=false;running.forEach(a=>a.cancel());running=[]}
+const done=as=>Promise.all(as.map(a=>a.finished.catch(()=>{})));
+const hidden=()=>{[body,fa,fb,fc,spark,glint,...chars,...sc].forEach(e=>e.style.opacity=0)};
+const shown=()=>{[body,fa,fb,fc,...chars,...sc].forEach(e=>e.style.opacity=1);spark.style.opacity=0;glint.style.opacity=0};
+
+async function enter(){
+  const t=token; hidden(); if(reduce){shown();return}
+  const as=[];
+  // 1 冰核：从一个亮点结晶成六边形
+  as.push(A(spark,[{opacity:0,transform:'scale(.2)'},{opacity:1,transform:'scale(1)',offset:.4},{opacity:0,transform:'scale(1.6)'}],{duration:700,easing:E.out}));
+  as.push(A(body,[{opacity:0,transform:'scale(.3) rotate(-60deg)'},{opacity:1,transform:'scale(1) rotate(0)'}],{duration:900,delay:150,easing:E.out}));
+  // 2 三个受光面依次落位
+  [[fa,'translate(18px,-14px)'],[fb,'translate(-4px,-22px)'],[fc,'translate(-22px,4px)']].forEach(([f,from],i)=>
+    as.push(A(f,[{opacity:0,transform:from+' scale(.85)'},{opacity:1,transform:'none'}],{duration:650,delay:600+i*110,easing:E.out})));
+  // 3 字母从冰晶两侧展开
+  order.forEach((c,i)=>as.push(A(c,[{opacity:0,transform:'translateY(18px)',filter:'blur(4px)'},{opacity:1,transform:'none',filter:'blur(0)'}],{duration:700,delay:850+i*55,easing:E.out})));
+  // 4 STUDIO 收拢字距
+  sc.forEach((s,i)=>{const dx=(i-(sc.length-1)/2)*14;
+    as.push(A(s,[{opacity:0,transform:`translateX(${dx}px)`},{opacity:1,transform:'none'}],{duration:900,delay:1300,easing:E.out}))});
+  await done(as); if(t!==token)return;
+  // 落定时一道光扫过
+  await glintOnce(); 
+}
+function glintOnce(){glint.style.opacity=1;
+  return done([A(glint,[{transform:'skewX(-20deg) translateX(-80px)'},{transform:'skewX(-20deg) translateX(220px)'}],{duration:900,easing:E.io})])}
+let loopV=new URLSearchParams(location.search).get('loop')||'a';
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+let star=null;
+function mkStar(){if(star)return star;const ns='http://www.w3.org/2000/svg';star=document.createElementNS(ns,'path');
+  // 四角星，放在冰晶顶点右上
+  const cx=424,cy=146,R=20,r=3.4;star.setAttribute('d',`M${cx},${cy-R} L${cx+r},${cy-r} L${cx+R},${cy} L${cx+r},${cy+r} L${cx},${cy+R} L${cx-r},${cy+r} L${cx-R},${cy} L${cx-r},${cy-r}Z`);
+  star.setAttribute('class','star');star.style.opacity=0;star.style.transformBox='fill-box';star.style.transformOrigin='center';
+  mark.parentNode.appendChild(star);return star}
+const LOOPS={
+  // A：原版 呼吸 + 三面依次亮 + 扫光
+  async a(t){const as=[A(mark,[{transform:'scale(1)'},{transform:'scale(1.035)'},{transform:'scale(1)'}],{duration:2400,easing:E.io})];
+    [fa,fb,fc].forEach((f,i)=>as.push(A(f,[{filter:'brightness(1)'},{filter:'brightness(1.18)'},{filter:'brightness(1)'}],{duration:900,delay:300+i*220,easing:E.io})));
+    as.push(glintPromise());await done(as);await wait(900)},
+  // B：光向流转 三个受光面的颜色绕顶点轮转一圈，像光源绕着冰晶转；不缩放、无间歇
+  async b(t){const C=['#E6F6FF','#93C5FD','#60A5FA'],D=7200;
+    const as=[fa,fb,fc].map((f,i)=>A(f,[0,1,2,3].map(k=>({fill:C[(i+k)%3],stroke:C[(i+k)%3]})),{duration:D,easing:'linear'}));
+    await done(as)},
+  // C：凝霜 冰晶静止，每隔几秒一道斜向扫光，扫到顶点时闪一下星芒
+  async c(t){const st=mkStar();glint.style.opacity=1;
+    const g=A(glint,[{transform:'skewX(-20deg) translateX(-80px)'},{transform:'skewX(-20deg) translateX(220px)'}],{duration:1100,easing:E.io});
+    const s1=A(st,[{opacity:0,transform:'scale(.2) rotate(0deg)'},{opacity:1,transform:'scale(1) rotate(45deg)',offset:.45},{opacity:0,transform:'scale(.3) rotate(90deg)'}],{duration:900,delay:650,easing:E.out});
+    await done([g,s1]);await wait(2800)}
+};
+async function loop(){
+  const t=token; shown(); loopOn=true; if(reduce)return;
+  while(loopOn&&t===token){await LOOPS[loopV](t)}
+}
+function glintPromise(){glint.style.opacity=1;return A(glint,[{transform:'skewX(-20deg) translateX(-80px)'},{transform:'skewX(-20deg) translateX(220px)'}],{duration:1000,delay:900,easing:E.io})}
+async function exit(){
+  loopOn=false; const t=token; shown(); if(reduce){hidden();return}
+  const as=[];
+  sc.forEach(s=>as.push(A(s,[{opacity:1},{opacity:0}],{duration:350,easing:E.in})));
+  [...order].reverse().forEach((c,i)=>as.push(A(c,[{opacity:1,transform:'none',filter:'blur(0)'},{opacity:0,transform:'translateY(-12px)',filter:'blur(4px)'}],{duration:450,delay:i*40,easing:E.in})));
+  [[fc,'translate(-22px,4px)'],[fb,'translate(-4px,-22px)'],[fa,'translate(18px,-14px)']].forEach(([f,to],i)=>
+    as.push(A(f,[{opacity:1,transform:'none'},{opacity:0,transform:to+' scale(.85)'}],{duration:420,delay:400+i*80,easing:E.in})));
+  as.push(A(body,[{opacity:1,transform:'scale(1) rotate(0)'},{opacity:1,transform:'scale(.15) rotate(60deg)',offset:.85},{opacity:0,transform:'scale(.05) rotate(60deg)'}],{duration:700,delay:650,easing:E.in}));
+  as.push(A(spark,[{opacity:0,transform:'scale(.2)'},{opacity:1,transform:'scale(.7)',offset:.3},{opacity:0,transform:'scale(.1)'}],{duration:600,delay:1200,easing:E.out}));
+  await done(as);
+}
+async function all(){const t=token;await enter();if(t!==token)return;
+  const l=loop();await new Promise(r=>setTimeout(r,6500));if(t!==token)return;loopOn=false;await l;if(t!==token)return;await exit()}
+const acts={enter,loop,exit,all,theme:()=>document.body.classList.toggle('dark')};
+$$('button').forEach(b=>b.onclick=()=>{const a=b.dataset.a;if(b.dataset.v){loopV=b.dataset.v;$$('button[data-v]').forEach(x=>x.classList.toggle('on',x===b))}if(a==='theme')return acts.theme();stopAll();acts[a]()});
+if(new URLSearchParams(location.search).has('dark'))document.body.classList.add('dark');
+$$('button[data-v]').forEach(x=>x.classList.toggle('on',x.dataset.v===loopV));
+const auto=new URLSearchParams(location.search).get('play');
+setTimeout(()=>acts[auto||'all'](),300);
+</script>
+</body></html>

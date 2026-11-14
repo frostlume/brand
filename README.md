@@ -14,6 +14,7 @@ Frostlume 及旗下产品的 Logo、图标与使用规范。
 | --- | --- |
 | `frostlume/color/` | 工作室彩色标：字标（浅底 / 深底 / 透明底）、六边形标、应用图标 |
 | `frostlume/mono/` | 单色版：黑、白字标，单色图标与单色标 |
+| `frostlume/motion/` | Logo 动画：入场、循环待机、退场。`frostlume-anim.html` 是源文件（纯 SVG + Web Animations API，无外部依赖），另有浅色 / 深色 MP4 录屏（1280×720，约 13 秒） |
 | `frostlume/avatar/` | 头像用的方形图（GitHub 组织头像等），1024×1024 |
 | `owltide/` | OwlTide 的潮汐眼图标、标志与字标（浅色 / 深色） |
 
@@ -41,6 +42,7 @@ SVG 是源文件，PNG 由 SVG 导出。需要别的尺寸时请从 SVG 导出�
 - 彩色标优先；只能用一种颜色时，用完整字标的单色版（`mono/`），不要单独使用单色六边形
 - 四周至少留出六边形高度一半的空白
 - 不要拉伸、旋转、改色、加描边或阴影，不要拆开六边形的三个亮面
+- 动画只用 `motion/` 里的版本，不要自己另做入场效果
 - 浅色背景用 `frostlume-light`，深色背景用 `frostlume-dark`
 
 ## OwlTide
