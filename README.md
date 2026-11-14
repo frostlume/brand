@@ -14,6 +14,7 @@ Frostlume 及旗下产品的 Logo、图标与使用规范。
 | --- | --- |
 | `frostlume/color/` | 工作室彩色标：字标（浅底 / 深底 / 透明底）、六边形标、应用图标 |
 | `frostlume/mono/` | 单色版：黑、白字标，单色图标与单色标 |
+| `frostlume/banner/` | 横幅：透明底、紧凑裁切，浅色 / 深色两版，用于 README 和主页头图 |
 | `frostlume/motion/` | Logo 动画：入场、循环待机、退场。`frostlume-anim.html` 是源文件（纯 SVG + Web Animations API，无外部依赖），另有浅色 / 深色 MP4 录屏（1280×720，约 13 秒） |
 | `frostlume/avatar/` | 头像用的方形图（GitHub 组织头像等），1024×1024 |
 | `owltide/` | OwlTide 的潮汐眼图标、标志与字标（浅色 / 深色） |
