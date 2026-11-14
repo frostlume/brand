@@ -1,12 +1,21 @@
-# brand
-
-Frostlume 及旗下产品的 Logo、图标与使用规范。
-
-<p>
-  <img src="frostlume/color/frostlume-light.svg" height="72" alt="Frostlume">
-  &nbsp;&nbsp;&nbsp;
-  <img src="owltide/wordmark-light.svg" height="56" alt="OwlTide">
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="frostlume/banner/frostlume-banner-dark.svg">
+    <img src="frostlume/banner/frostlume-banner-light.svg" width="400" alt="Frostlume">
+  </picture>
 </p>
+
+<p align="center">Frostlume 及旗下产品的 Logo、图标与使用规范</p>
+
+<p align="center">
+  <img src="owltide/icon.svg" width="72" alt="OwlTide">
+  &nbsp;&nbsp;
+  <img src="floe/floe-light.svg" width="72" alt="霁 Floe">
+  &nbsp;&nbsp;
+  <img src="facet/facet-icon.svg" width="72" alt="晶览 Facet">
+</p>
+
+<p align="center"><sub>OwlTide · 霁 Floe · 晶览 Facet</sub></p>
 
 ## 目录
 
@@ -53,6 +62,18 @@ SVG 是源文件，PNG 由 SVG 导出。需要别的尺寸时请从 SVG 导出�
 - 图标：潮汐眼（下眼睑是一道波浪，中间是瞳孔）
 - 字标：Fraunces（Google Fonts，SIL OFL 1.1），已转为路径
 - 颜色：浅底 `#111111`，深底 `#F0F6FC`；瞳孔为透明镂空
+
+## 霁 Floe
+
+- 图标：药丸·切口（渐变圆盘前横过一枚药丸，中间用背景色隔开）
+- 颜色：圆盘 `#8E9EFF` → `#5363B8`，药丸 `#FFB59A` → `#E0789A`；浅底 `#FFF3EC`，深底 `#1C2036`
+- 单色主题图标（`floe-mono`）供 Android 13+ 主题图标使用
+
+## 晶览 Facet
+
+- 图标：M3E 风格文件夹，前片合上，里面露出一张微斜的空白纸
+- 颜色：底 `#D8E2FF`，后片 `#2F5DA8`，前片 `#4C7FD6`，纸 `#A8C7FA`
+- 英文名暂定，正式定名前图标可能还会调整
 
 ## 许可
 
